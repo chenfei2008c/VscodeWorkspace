@@ -1,0 +1,15 @@
+1.安装git
+2.安装github pull插件
+3.配置账户名和邮箱git config --global user.name "chenfei2008c" git config --global user.email chenfei2008c@icloud.com  
+4.git init初始化
+5.映射线下至线上仓库git remote add origin git@github.com:chenfei2008c/VscodeWorkspace.git
+6.选择main分支git branch -M main
+7.配置keypair ssh-keygen -t ed25519 -C "chenfei2008c@icloud.com"
+8.打开公钥文件 cd ~/.ssh cat id_ed25519.pub
+9.执行pull git pull origin main
+10.选配网络
+git config --global http.proxy 'socks5://127.0.0.1:7080'
+git config --global https.proxy 'socks5://127.0.0.1:7080'
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+git config --global -l
